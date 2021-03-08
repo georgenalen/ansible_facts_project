@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: true
+  vars:
+      some_var: here
+      pgs12cis_pgs12_usr: postgres
+
+  tasks:
+  - name: "tasks"
+    include_tasks: apache_unix.yml
